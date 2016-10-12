@@ -1,0 +1,396 @@
+/*
+ * global.css is the primary style sheet
+ * to control various styling and layout functions for
+ * the portfolio site. Any reproduction of the code
+ * for other sites is permitted provided permission
+ * from the author.
+ *
+ * Author: Dominic Farolino
+ * Email: domfarolino@gmail.com
+ * Website: http://www.domfarolino.com
+ * Date: 10/9/14
+ */
+
+html, body{
+    background-color:white;
+    color:rgba(0, 38, 36, 1);
+    font-family: 'Open Sans';
+}
+
+h1,
+h2,
+h3{
+    margin:10px;
+    color: #FF6B6B;
+    color: #233040;
+    color:teal;
+}
+
+h1,
+h2,
+h3{
+    font-weight:200;
+}
+h4,
+h5,
+h6{
+    font-weight:500;
+}
+
+h1{
+    font-size:45px !important;
+}
+h2{
+    font-size:30px !important;
+}
+h3{
+    font-size:20px !important;
+}
+h4{
+    font-size:15px !important;
+}
+h5{
+    font-size:13px !important;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+#poster img{
+    width:277px;
+    height:270px;
+    border-radius:156px;
+    transform:rotateZ(-2deg);
+    box-shadow:0px 0px 6px 1px rgba(20,20,20,.6);
+
+}
+
+.section{
+    background-color:#ecf0f1;
+    background-color:rgba(220, 220, 220, .3);
+    margin-top:50px;
+    background-color:rgba(235, 225, 199, .3);
+}
+
+a{
+  color:teal;
+  text-decoration:underline;
+}
+
+/*
+ * Fluid-Boxes
+ *
+ */
+
+.fluid-row{
+    width:100%;
+}
+.fluid-container{
+    width:100%;
+    margin:0 auto;
+}
+.fluid-box{
+    display:inline-block;
+    float:left;
+    width:33.33%;
+}
+.fluid-box.animate{
+    visibility:hidden;
+}
+.fluid-content{
+    display:block;
+    width:80%;
+    max-width:250px;
+    margin:0 auto; 
+}
+.fluid-content#work{
+    max-width:380px;
+}
+.fluid-content img{
+    display:block;
+    width:100%;
+    border-radius:175px;
+    box-shadow: 0px 0px 17px 2px rgba(20,20,20,.5);
+}
+
+@media only screen and (max-width : 650px) {
+    .fluid-row{
+        height:100%;
+        /*height:1052px;*/
+    }
+    .fluid-container{
+        width:100%;
+        height:auto;
+    }
+    .fluid-box{
+        display:block;
+        float:none;
+        width:250px;
+        margin:10px auto;
+    }
+    .fluid-box#work{
+        width:380px;
+    }
+    .fluid-content{
+        width:100%;
+        height:100%;
+    }
+}
+
+/*********************************************/
+
+/*                 Project                   */
+
+#my-work-section{
+    width:100%;
+    height:auto;
+    padding-bottom:40px;
+}
+
+.project-card{
+  margin:0 auto;
+  width:100%;
+  max-width:380px;
+  background-color:rgba(240,240,240,.9);
+  background-color:rgba(242,236,220,.9);
+  padding:10px;
+  box-shadow: 0px 0px 10px rgba(100,100,100,1);
+  box-sizing:border-box;
+}
+
+.project-card:hover{
+  box-shadow: 0px 0px 18px rgba(100,100,100,1);
+}
+
+.project-card img{
+  border-bottom:5px solid tomato;
+  border-bottom:5px solid teal;
+}
+
+/********************************************/
+
+
+
+.box-sizing{
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+}
+
+.valign{
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.middle{
+    text-align:center;
+}
+
+.text-click{
+  cursor:pointer;
+}
+
+.warning{
+  background-color:rgba(231, 76, 60,.89);
+  padding:10px;
+  border:2px solid rgba(231, 76, 60,.89);
+}
+
+.fade{
+    -webkit-animation: fadein 1.5s cubic-bezier(0.000, 0.720, 0.330, 0.985); /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1.5s cubic-bezier(0.000, 0.720, 0.330, 0.985); /* Firefox < 16 */
+        -ms-animation: fadein 1.5s cubic-bezier(0.000, 0.720, 0.330, 0.985); /* Internet Explorer */
+         -o-animation: fadein 1.5s cubic-bezier(0.000, 0.720, 0.330, 0.985); /* Opera < 12.1 */
+            animation: fadein 1.5s cubic-bezier(0.000, 0.720, 0.330, 0.985);
+}
+
+.reveal{
+    -webkit-animation: reveal 2s cubic-bezier(0.000, 0.720, 0.330, 0.985); /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: reveal 2s cubic-bezier(0.000, 0.720, 0.330, 0.985); /* Firefox < 16 */
+        -ms-animation: reveal 2s cubic-bezier(0.000, 0.720, 0.330, 0.985); /* Internet Explorer */
+         -o-animation: reveal 2s cubic-bezier(0.000, 0.720, 0.330, 0.985); /* Opera < 12.1 */
+            animation: reveal 2s cubic-bezier(0.000, 0.720, 0.330, 0.985);
+}
+
+.trans-all{
+-webkit-transition: all 500ms cubic-bezier(0.000, 0.720, 0.330, 0.985);
+   -moz-transition: all 500ms cubic-bezier(0.000, 0.720, 0.330, 0.985);
+     -o-transition: all 500ms cubic-bezier(0.000, 0.720, 0.330, 0.985);
+        transition: all 500ms cubic-bezier(0.000, 0.720, 0.330, 0.985);
+}
+
+
+/* FADEIN */
+/* FADEIN */
+/* FADEIN */
+/* FADEIN */
+/* FADEIN */
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(-90px);
+    }
+    
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+        -moz-transform: translateY(-90px);
+    }
+    
+    to{
+        opacity: 1;
+        -moz-transform: translateY(0px);
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-90px);
+    }
+    
+    to{
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+        -ms-transform: translateY(-90px);
+    }
+    
+    to{
+        opacity: 1;
+        -ms-transform: translateY(0px);
+    }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+        -o-transform: translateY(-90px);
+    }
+    
+    to{
+        opacity: 1;
+        -o-transform: translateY(0px);
+    }
+}
+
+/* REVEAL */
+/* REVEAL */
+/* REVEAL */
+/* REVEAL */
+/* REVEAL */
+/* REVEAL */
+
+@keyframes  reveal {
+    from {
+        opacity: 0;
+    }
+    
+    to{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes  reveal {
+    from {
+        opacity: 0;
+    }
+    
+    to{
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes reveal {
+    from {
+        opacity: 0;
+    }
+    
+    to{
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes  reveal {
+    from {
+        opacity: 0;
+    }
+    
+    to{
+        opacity: 1;
+    }
+}
+
+@-o-keyframes  reveal {
+    from {
+        opacity: 0;
+    }
+    
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+.view-animate-container {
+  position:relative;
+  height:650px !important;
+  overflow:auto;
+  overflow:hidden;
+}
+
+.view-animate {
+  padding:10px;
+}
+
+.view-animate.ng-enter, .view-animate.ng-leave {
+  -webkit-transition: all 150ms;
+  -o-transition: all 150ms;
+  transition: all 150ms;
+
+  display:block;
+  width:100%;
+
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:10px;
+}
+.view-animate.ng-enter{
+  -webkit-transition: all 150ms 150ms;
+  -o-transition: all 150ms 150ms;
+  transition: all 150ms 150ms;
+}
+
+.view-animate.ng-enter {
+  opacity:0;
+}
+.view-animate.ng-enter.ng-enter-active {
+  opacity:1;
+}
+.view-animate.ng-leave.ng-leave-active {
+  opacity:0;
+}
