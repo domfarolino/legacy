@@ -1,0 +1,15 @@
+.inherit {
+  color: inherit;
+  background-color: inherit;
+  text-decoration: none;
+}
+
+button {
+  margin:5px 0 0 0;
+  background-color:#2E66AD !important;
+}
+
+article {
+  margin: 0 auto;
+  max-width: 840px;
+}

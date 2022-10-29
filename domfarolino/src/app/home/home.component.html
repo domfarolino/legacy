@@ -1,0 +1,76 @@
+<article>
+  <md-card>
+    <h2>Hello!</h2>
+    <div style="text-align:center; width:100% !important; overflow:hidden;">
+      <div class="github-card" data-github="domfarolino" data-width="400" data-height="" data-theme="medium"></div>
+    </div>
+  </md-card>
+
+  <md-card>
+    <h2>About Me</h2>
+    <p>
+      I am a 3rd year computer science major at the University of Cincinnati currently pursuing my Masters degree.
+      I have a passion for computer science theory, algorithms, and building web applications other people can use
+      to connect with each other. I'm a big advocate of the modern open web platform and want to do what I can to help
+      the web do everything native can on every platform.
+    </p>
+
+    <h3>Web</h3>
+    <p>
+      I like to experiment with <a href="https://developers.google.com/web/progressive-web-apps" target="_blank">Progressive Web Apps</a>
+      and learn about cutting edge JavaScript and Node.js.
+    </p>
+
+    <h3>Algorithms</h3>
+    <p>
+      I like to study algorithms & discrete mathematics. I competed in the 2016 International Collegiate Programming Competition and
+      spend a lot of time solving problems on competitive programming platforms such as:
+    </p>
+    <ul>
+      <li><a href="https://uva.onlinejudge.org/" target="_blank">UVa Online Judge</a></li>
+      <li><a href="https://www.hackerrank.com/" target="_blank">Hackerrank</a></li>
+      <li><a href="https://leetcode.com/problemset/algorithms/" target="_blank">Leetcode</a></li>
+    </ul>
+    Problem solving can be addicting, and if I find a problem whose answer consists of some neat symmetry I might
+    write a short <a href="https://chinocode.com" target="_blank">post</a> about it.
+
+  </md-card>
+
+  <md-card>
+    <h2>Recent Projects</h2>
+    <p>Here's a condensed list of some of my GitHub repositories</p>
+    <div style="text-align:center;">
+      <div *ngFor="let repo of repos" style="height:200px !important; overflow: hidden;">
+        <div class="github-card" [attr.data-github]="repo" data-width="100%" data-height="" data-theme="default"></div>
+      </div>
+    </div>
+  </md-card>
+
+  <md-card>
+    <h2>Contact me:</h2>
+    <a href="https://github.com/domfarolino" target="_blank" class="inherit">
+      <button md-raised-button color="primary">
+        GitHub
+      </button>
+    </a>
+
+    <a href="https://twitter.com/DomFarolino" target="_blank" class="inherit">
+      <button md-raised-button color="primary">
+        Twitter
+      </button>
+    </a>
+
+    <a href="https://chinocode.com" target="_blank" class="inherit">
+      <button md-raised-button color="primary">
+        Blog
+      </button>
+    </a>
+
+    <a href="mailto:domfarolino@gmail.com" target="_blank" class="inherit">
+      <button md-raised-button color="primary">
+        Email
+      </button>
+    </a>
+  </md-card>
+
+</article>
