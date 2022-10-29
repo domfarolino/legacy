@@ -6,3 +6,9 @@
 Simple personal site made with Angular 2
 
 [![logo](./logo.png)](https://github.com/domfarolino/domfarolino)
+
+# Archive
+
+To view the entire commit history of this repository (largely from 2016), rename
+`.git-archive` to `.git`, which will make this subdirectory a proper git
+repository.

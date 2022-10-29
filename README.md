@@ -1,3 +1,4 @@
 # legacy
 
-This repo is home to old code. It currently contains my old website, written in php and other things I no longer use.
+This repo is home to old code. It currently contain two old versions of website,
+written in php and angular respectively.
